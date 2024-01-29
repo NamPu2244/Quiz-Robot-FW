@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.11 on win32)" generated="2024-01-29T14:51:14.622573" rpa="false" schemaversion="5">
+<suite id="s1" name="Quiz-Robot-FW" source="D:\namPuTest\Quiz-Robot-FW">
+<suite id="s1-s1" name="preTest" source="D:\namPuTest\Quiz-Robot-FW\preTest.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-29T14:51:14.866855" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<arg>https://automationexercise.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T14:51:14.866855" elapsed="15.720592"/>
+</kw>
+<test id="s1-s1-t1" name="Register with valid info" line="37">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:30.635157" level="INFO">Element '//*[@id="slider-carousel"]/div' is displayed.</msg>
+<arg>//*[@id="slider-carousel"]/div</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-01-29T14:51:30.587447" elapsed="0.048711"/>
+</kw>
+<kw name="Click Signup/Login Element">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:30.637638" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:30.637638" elapsed="3.532668"/>
+</kw>
+<status status="PASS" start="2024-01-29T14:51:30.637638" elapsed="3.532668"/>
+</kw>
+<kw name="Input emailLogin">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:34.170306" level="INFO">Typing text 'nampunim@gmail.com' into text field '//*[@id="form"]/div/div/div[1]/div/form/input[2]'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div/form/input[2]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:34.170306" elapsed="0.132253"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2024-01-29T14:51:34.170306" elapsed="0.132253"/>
+</kw>
+<kw name="Input passwordLogin">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:34.310240" level="INFO">Typing text 'test1234' into text field '//*[@id="form"]/div/div/div[1]/div/form/input[3]'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div/form/input[3]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:34.309242" elapsed="0.160940"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-01-29T14:51:34.302559" elapsed="0.167623"/>
+</kw>
+<kw name="Click Login Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:34.470182" level="INFO">Clicking button '//*[@id="form"]/div/div/div[1]/div/form/button'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:34.470182" elapsed="12.700200"/>
+</kw>
+<status status="PASS" start="2024-01-29T14:51:34.470182" elapsed="12.701195"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:47.212597" level="INFO">Element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-01-29T14:51:47.172377" elapsed="0.040220"/>
+</kw>
+<kw name="Click Logout Element">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:47.214595" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:47.213596" elapsed="5.970759"/>
+</kw>
+<status status="PASS" start="2024-01-29T14:51:47.213596" elapsed="5.971758"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:53.211885" level="INFO">Element '//*[@id="form"]/div/div' is displayed.</msg>
+<arg>//*[@id="form"]/div/div</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-01-29T14:51:53.186352" elapsed="0.025533"/>
+</kw>
+<doc>Test the login functionality with valid credentials</doc>
+<status status="PASS" start="2024-01-29T14:51:30.587447" elapsed="22.625436"/>
+</test>
+<doc>This is a sample test suite using Robot Framework</doc>
+<status status="PASS" start="2024-01-29T14:51:14.659362" elapsed="38.555523"/>
+</suite>
+<status status="PASS" start="2024-01-29T14:51:14.627350" elapsed="38.590297"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Quiz-Robot-FW">Quiz-Robot-FW</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="preTest">Quiz-Robot-FW.preTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
